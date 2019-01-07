@@ -2,7 +2,18 @@
 	based on a given key */
 
 
-const convert = () => {
+const convert = (myArray,keyVal) => {
+	let objectVal=null;
+	if(Array.isArray(myArray))
+	{	}
+	if(myArray.length>0 && keyVal){
+		objectVal={};
+		for(arrVal of myArray)
+		{
+			objectVal[arrVal[keyVal]]=arrVal;
+		}
+	}
+	return objectVal;
 	// Write your code here
 };
 
